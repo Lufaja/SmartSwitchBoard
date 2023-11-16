@@ -46,6 +46,9 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "post-install-cmd": [
+            "[[ -z $DOCKER_ENV ]] || (sudo apt-get update && sudo apt-get install -y mariadb-server)"
         ]
     },
     "extra": {
