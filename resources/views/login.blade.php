@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <img id="image" src="images/logo.svg" alt="Royal Van der Leun">
-            <form action="action_page.php" method="post">
+            <form action="{{Route('welcome')}}" method="GET">
             <div class="userInput">
                 <label for="uname"><b>Username</b></label>
                 <input type="text" placeholder="Enter Username" name="uname" required>

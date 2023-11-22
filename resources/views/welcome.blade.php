@@ -1,5 +1,2 @@
 <h1>Welcome</h1>
-<a href="home"> Home</a><br>
-<a href="settings"> Settings</a><br>
-<a href="ship">Ship</a><br>
-<a href="login">Logout</a><br>
+@include ('redirects')
