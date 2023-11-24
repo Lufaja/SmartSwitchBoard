@@ -21,7 +21,7 @@ class DeviceController extends Controller
      */
     public function create()
     {
-        //
+        return view('device.create'); 
     }
 
     /**
@@ -29,7 +29,23 @@ class DeviceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $message = [
+            'required' => 'You forgot :attribute'
+        ];
+
+        $request->validate([
+            'name' => 'required',
+            'brand' => 'required',
+            'type' => 'required',
+        ],$message);
+
+        Device::create([
+            'name'=>$request['name'],
+            'brand'=>$request['brand'],
+            'type'=>$request['type']
+        ]);
+        
+        dd($request);
     }
 
     /**

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\DeviceController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('/device/store',[DeviceController::class, 'store'])->name('device.store');
+Route::get('/device/create', [DeviceController::class, 'create'])->name('device.create');
