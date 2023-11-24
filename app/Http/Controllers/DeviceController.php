@@ -13,7 +13,8 @@ class DeviceController extends Controller
      */
     public function index()
     {
-        //
+        $devices = Device::all();
+        return view('device.components', ['devices' => $devices]);
     }
 
     /**

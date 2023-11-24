@@ -11,20 +11,20 @@
     <form action="{{Route('device.store')}}" method="post">
         @csrf
         <label for="device name">Device name:</label>
-        <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name" value={{old("name")}}>
         @error("name")
             <span style='color:red'>{{$message}}</span>
         @enderror
         <br>
         
-        <label for="brand">Choose a brand:</label>
+        <label for="type">Choose a brand:</label>
         <select name="brand" id="brand">
             <option disabled selected value></option>
-            <option value="merk 1">merk 1</option>
-            <option value="merk 2">merk 2</option>
-            <option value="merk 3">merk 3</option>
-            <option value="merk 4">merk 4</option>
+            @foreach(range(0, 10) as $count)
+                <option @if(old('brand') == "merk " . $count) selected @endif value="merk {{ $count }}">brand {{ $count }}</option>
+            @endforeach
         </select>
+
         @error("brand")
             <span style='color:red'>{{$message}}</span>
         @enderror
@@ -33,10 +33,9 @@
         <label for="type">Choose a type:</label>
         <select name="type" id="type">
             <option disabled selected value></option>
-            <option value="type 1">type 1</option>
-            <option value="type 2">type 2</option>
-            <option value="type 3">type 3</option>
-            <option value="type 4">type 4</option>
+            @foreach(range(0, 10) as $count)
+                <option @if(old('type') == "merk " . $count) selected @endif value="type {{ $count }}">type {{ $count }}</option>
+            @endforeach
         </select>
         @error("type")
             <span style='color:red'>{{$message}}</span>
