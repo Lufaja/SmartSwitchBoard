@@ -46,7 +46,7 @@ class DeviceController extends Controller
             'type'=>$request['type']
         ]);
         
-        dd($request);
+        return redirect(route("device.index"));
     }
 
     /**
