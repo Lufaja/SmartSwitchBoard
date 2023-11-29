@@ -1,0 +1,75 @@
+/* styles*/
+@Import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
+
+/* styles */
+
+
+.royal {
+    width:50%;
+}
+
+.nav-links {
+    display: none;
+    color: #004f9f;
+}
+.nav-links a {
+    display: block;
+    padding: 15px;
+    color: #004f9f;
+    text-decoration: none;
+}
+
+
+.navbar {
+    background-color: #004f9f;
+}
+
+.nav-item {
+    font-size:20px;
+    font-weight: 800;
+    color:#004f9f !important;
+    /* color:#004f9f */
+}
+.dropbtn {
+    background-color: #f8f9fa;
+    color: #004f9f;
+    /* padding: 20x; */
+    font-weight:800;
+    padding-right:40px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    float: right;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #004f9f;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {color: #cecece;}
+
+.show {display: block;}
+
+/* Text color in navbar */
+.color {
+    color:#004f9f !important;
+}
