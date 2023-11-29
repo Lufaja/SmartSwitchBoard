@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\cr;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
      * Display a listing of the resource.
      */
     public function index()
@@ -34,7 +37,7 @@ class HomeController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(cr $cr)
+    public function show()
     {
         //
     }
@@ -42,7 +45,7 @@ class HomeController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(cr $cr)
+    public function edit()
     {
         //
     }
@@ -50,7 +53,7 @@ class HomeController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, cr $cr)
+    public function update(Request $request)
     {
         //
     }
@@ -58,7 +61,7 @@ class HomeController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(cr $cr)
+    public function destroy()
     {
         //
     }
