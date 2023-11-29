@@ -16,3 +16,4 @@ use App\Http\Controllers\DeviceController;
 Route::post('/device/store',[DeviceController::class, 'store'])->name('device.store');
 Route::get('/device/create', [DeviceController::class, 'create'])->name('device.create');
 Route::get('/device/index', [DeviceController::class, 'index'])->name('device.index');
+Route::get('/device/destroy/{device}', [DeviceController::class, 'destroy'])->name('device.destroy');
