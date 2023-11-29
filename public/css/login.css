@@ -1,0 +1,79 @@
+
+    /* Body style */
+    body{
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Full-width inputs */
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        box-sizing: border-box;
+    }
+    /* Set a style for all buttons */
+    button {
+        background-color: #004f9f;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: 0;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size:15px;
+    }
+
+    *:focus {
+        outline: 1px solid #004f9f;
+    }
+    
+
+    #flex{
+        display: flex;
+        align-items: center;
+    }
+    #checkbox {
+        justify-content: end;
+        display: flex;
+        width: 100%;
+    }
+    
+    /* Add a hover effect for buttons */
+    button:hover {
+        opacity: 0.8;
+    }
+
+    /* Add padding to containers */
+    .container {
+        width:25%;
+        position: relative;   
+        border: 3px solid #f1f1f1;
+        border-radius:20px;
+        margin: 0 auto;
+        padding: 25px;
+    }
+    
+    #image {
+        margin-bottom: 20px;
+    }
+
+    .userInput{
+        font-size:20px;
+        color: #004f9f
+    }
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+        span.psw {
+        display: block;
+        float: none;
+        }
+        .cancelbtn {
+        width: 100%;
+        }
+    }
