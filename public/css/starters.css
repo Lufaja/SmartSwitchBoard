@@ -1,46 +1,100 @@
-/* Dropup Button */
-.dropbtn1 {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropup content */
-  .dropup {
+/* Stijlen voor items */
+.item-list {
+    margin-top: 50px; /* Extra ruimte boven de knoppen */
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 20px; /* Afstand tot de linkerkant van het scherm */
+    top: 50px; /* Positie vanaf de bovenkant van het scherm */
+    gap: 10px; /* Ruimte tussen de knoppen */
+}
+
+/* Stijlen voor dropdown button */
+.dropdown-btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 0;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #2056ae;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Stijlen voor pop-up */
+.popup-container {
+    display: none;
+    position: fixed;
+    left: 80px; /* Afstand tot de linkerkant van het scherm */
+    top: 100px; /* Positie vanaf de bovenkant van het scherm */
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color:#2056ae;
+}
+
+.switch-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Stijlen voor schakelaar (aan/uit-knop) */
+.switch {
     position: relative;
     display: inline-block;
-  }
-  
-  /* Dropup content (Hidden by Default) */
-  .dropup-content {
-    display: none;
+    width: 40px;
+    height: 24px;
+}
+
+/* Voeg meer stijlen toe naar behoefte */
+
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
     position: absolute;
-    bottom: 50px;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropup */
-  .dropup-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropup links on hover */
-  .dropup-content a:hover {background-color: #ddd}
-  
-  /* Show the dropup menu on hover */
-  .dropup:hover .dropup-content {
-    display: block;
-  }
-  
-  /* Change the background color of the dropup button when the dropup content is shown */
-  .dropup:hover .dropbtn {
-    background-color: #2980B9;
-  }
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #f36717;
+}
+
+input:checked + .slider:before {
+    transform: translateX(16px);
+}
