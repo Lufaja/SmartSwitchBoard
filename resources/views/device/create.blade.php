@@ -86,7 +86,6 @@
         background-color: white;
         padding: 10px;
         margin: 0px;
-        border: 1px solid black;
         
     }
     .item{
