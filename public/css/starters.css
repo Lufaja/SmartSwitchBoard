@@ -1,12 +1,13 @@
 /* Stijlen voor items */
 .item-list {
-    margin-top: 50px; /* Extra ruimte boven de knoppen */
+    /* margin-top: 50px; */
     display: flex;
     flex-direction: column;
-    position: fixed;
-    left: 20px; /* Afstand tot de linkerkant van het scherm */
-    top: 50px; /* Positie vanaf de bovenkant van het scherm */
-    gap: 10px; /* Ruimte tussen de knoppen */
+    position: relative;
+    left: 20px;
+    /* top: 50px; */
+    gap: 10px;
+    align-items: self-start;
 }
 
 /* Stijlen voor dropdown button */
