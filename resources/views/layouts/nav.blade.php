@@ -20,7 +20,7 @@
         <div id="myDropdown" class="dropdown-content">
             <a href="../settings/settings.php">Settings</a>
             <a href="../about/about.php">About</a>
-            <a href="#Logout">Logout</a>
+            <a href="../logout">Logout</a>
         </div>
     </div>
 </nav>
