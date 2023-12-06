@@ -10,7 +10,6 @@
     <title>Document</title>
     @stack('styles')
     <link rel="stylesheet" href="{{asset('style/style.css')}}">
-    @yield('style')
 </head>
 <body>
 
