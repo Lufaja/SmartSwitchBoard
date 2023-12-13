@@ -4,6 +4,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DeviceController;
+use App\Http\Controllers\StartersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,7 @@ use App\Http\Controllers\DeviceController;
 */
 Auth::routes();
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('welcome');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('2fa');
   
@@ -30,6 +31,8 @@ Route::post('/device/store',[DeviceController::class, 'store'])->name('device.st
 Route::get('/device/create', [DeviceController::class, 'create'])->name('device.create');
 Route::get('/device', [DeviceController::class, 'index'])->name('device.index');
 Route::get('/device/destroy/{device}', [DeviceController::class, 'destroy'])->name('device.destroy');
+
+Route::get('/starters', [App\Http\Controllers\StartersController::class, 'index'])->name('starters');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
