@@ -9,21 +9,19 @@
                 <li class="nav-item">
                     <a class="nav-link active color" aria-current="page" href="{{route('welcome')}}">Home</a>
                 <li class="nav-item">
-                    <a class="nav-link active color" aria-current="page" href="{{route('device.index')}}">Device</a>
+                    <a class="nav-link" aria-current="page" href="{{route('dashboard')}}">Dashboard</a>
                 </li>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="{{route('starters')}}">Dashboard</a>
+
                 </li>
             </ul>
         </div>
     </div>
     <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">Menu</button>
-        <div id="myDropdown" class="dropdown-content" style="z-index: 100;">
+            <a href="{{Route("device.index")}}">Configuration Menu</a>
             <a href="../settings/settings.php">Settings</a>
-            <a href="../about/about.php">About</a>
-            {{-- <a href="{{Route("device.index")}}">devices</a> --}}
             <a href="#Logout">Logout</a>
         </div>
     </div>
