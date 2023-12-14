@@ -22,7 +22,7 @@
         <button onclick="myFunction()" class="dropbtn">Menu</button>
         <div id="myDropdown" class="dropdown-content" style="z-index: 100;">
             <a href="{{route('device.index')}}">Configuration Menu</a>
-            <a href="../settings/settings.php">User Settings</a>
+            <a href="{{route('2fa.index')}}">User Settings</a>
             {{-- <a href="{{Route("device.index")}}">devices</a> --}}
             <a href="#Logout">Logout</a>
         </div>
