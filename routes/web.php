@@ -21,7 +21,7 @@ Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->name('welcome');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('welcome');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('welcome');
   
 Route::get('2fa', [App\Http\Controllers\TwoFAController::class, 'index'])->name('2fa.index');
 Route::post('2fa', [App\Http\Controllers\TwoFAController::class, 'store'])->name('2fa.post');
