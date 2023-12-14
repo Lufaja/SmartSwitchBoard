@@ -1,101 +1,25 @@
-/* Stijlen voor items */
-.item-list {
-    /* margin-top: 50px; */
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 20px;
-    /* top: 50px; */
-    gap: 10px;
-    align-items: self-start;
-}
+        /* CSS for button grid */
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+            gap: 10px; /* Adjust the gap between buttons */
+            justify-content: center; /* Centers the grid horizontally */
+        }
 
-/* Stijlen voor dropdown button */
-.dropdown-btn {
-    cursor: pointer;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    border: 0;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    color: #2056ae;
-    transition: background-color 0.3s ease;
-}
+        /* Style for buttons */
+        .grid-button {
+            padding: 10px 20px;
+            text-align: center;
+            background-color: white;
+            font-weight:bold;
+            color: #000000;
+            border: 3px solid #2056ae;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-.dropdown-btn:hover {
-    background-color: #e0e0e0;
-}
-
-/* Stijlen voor pop-up */
-.popup-container {
-    display: none;
-    position: fixed;
-    left: 80px; /* Afstand tot de linkerkant van het scherm */
-    top: 100px; /* Positie vanaf de bovenkant van het scherm */
-    width: 250px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-.popup-title {
-    margin-bottom: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    color:#2056ae;
-}
-
-.switch-container {
-    display: flex;
-    align-items: center;
-}
-
-/* Stijlen voor schakelaar (aan/uit-knop) */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 24px;
-}
-
-/* Voeg meer stijlen toe naar behoefte */
-
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    border-radius: 34px;
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 18px;
-    width: 18px;
-    left: 3px;
-    bottom: 3px;
-    background-color: white;
-    border-radius: 50%;
-    transition: .4s;
-}
-
-input:checked + .slider {
-    background-color: #f36717;
-}
-
-input:checked + .slider:before {
-    transform: translateX(16px);
-}
+        /* Hover effect for buttons */
+        .grid-button:hover {
+            background-color: #2980b9;
+        }

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class StartersController extends Controller
+class EnginesController extends Controller
 {
     /**
      * show the application dashboard.
@@ -15,7 +15,7 @@ class StartersController extends Controller
 
     public function index()
     {
-        return view("starters");
+        return view("engines");
     }
 
     public function create()

@@ -5,6 +5,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DeviceController;
 use App\Http\Controllers\StartersController;
+use App\Http\Controllers\EnginesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,7 +33,11 @@ Route::get('/device/create', [DeviceController::class, 'create'])->name('device.
 Route::get('/device/index', [DeviceController::class, 'index'])->name('device.index');
 Route::get('/device/destroy/{device}', [DeviceController::class, 'destroy'])->name('device.destroy');
 
-Route::get('/starters', [App\Http\Controllers\StartersController::class, 'index'])->name('starters');
+// Dashboard route
+Route::get('/starters', [StartersController::class, 'index'])->name('starters');
+
+// Engine route 
+Route::get('/engines', [EnginesController::class, 'index'])->name('engines');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
