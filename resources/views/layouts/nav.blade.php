@@ -7,7 +7,7 @@
         <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                 <li class="nav-item">
-                    <a class="nav-link active color" aria-current="page" href="{{route('home')}}">Home</a>
+                    <a class="nav-link active color" aria-current="page" href="{{route('welcome')}}">Home</a>
                 <li class="nav-item">
                     {{-- <a class="nav-link active color" aria-current="page" href="{{route('device.index')}}">Device</a> --}}
                 </li>
