@@ -5,7 +5,10 @@
 
 
 .royal {
-    width:50%;
+    width:150px !important;
+}
+.navbar-brand{
+    margin-right: 8rem;
 }
 
 .nav-links {
