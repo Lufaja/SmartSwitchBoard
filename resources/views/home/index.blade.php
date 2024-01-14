@@ -16,10 +16,10 @@
         <div class="div1">
             <div class="profile background item">
                 <div class="ship-name">
-                    <h1>Scopus</h1>
+                    <h1>Aeolus</h1>
                 </div>
                 <div class="logo">
-                    <img src="images\empty_profile_picture.png" alt="profile_picture">
+                    <img src="images\AEOLUS.jpg" alt="profile_picture">
                 </div>
             </div>
         </div>
@@ -30,10 +30,14 @@
                     <h2 class="fw-bold">Van der leun</h2>
                 </div>
                 <div class="Text">
-                    <div>Nummer</div>
-                    <div>Website</div>
-                    <div>instagram</div>
-                    <div>facebook</div>
+                    <div>info@royalvanderleun.com</div>
+                    <div>+31 (0)184 413 288</div>
+                    <div><a href="vanderleun.nl" target="_blank">vanderleun.nl</a></div>
+                    <div><a href="https://www.instagram.com/royalvanderleun/" target="blank">instagram</a></div>
+                    <div><a href="https://www.facebook.com/bvvanderleun/" target="blank">facebook</a></div>
+                </div>
+                <div class="info-logo">
+                    <img src="images/logo.svg" alt="logo">
                 </div>
             </div>    
         </div>
@@ -42,22 +46,26 @@
             <div class="ship-info background item">
                 <h2 class="fw-bold">My ship</h2>
                 <div class="Text">
-                    <div>Ship info</div>
-                    <div>Ship info</div>
-                    <div>Ship info</div>
-                    <div>Ship info</div>
+                    <div>IMO: 9612636</div>
+                    <div>General vessel type: Cargo</div>
+                    <div>MMSI: 245179000</div>
+                    <div>Call sign: PCRR</div>
+                    <div>Gross Tonnage: 19848</div>
+                    <div>Summer DWT: 6500 t</div>
+                    <div>Length Overall x Breadth Extreme: 139.4 x 44.4 m</div>
                 </div>
             </div>        
         </div>
 
         <div class="div4">
             <div class="ship-info2 background item">
-                <h2 class="fw-bold">info</h2>
+                <h2 class="fw-bold">location info</h2>
                 <div class="Text">
-                    <div>info</div>
-                    <div>info</div>
-                    <div>info</div>
-                    <div>info</div>
+                    <div>Position received: 2024-01-13 14:10 LT (UTC -5)</div>
+                    <div>Area: USEC - US East Coast</div>
+                    <div>Navigational Status: Moored</div>
+                    <div>Speed/Course: 0 kn / 16 °</div>
+                    <div>Reported Destination: SOUTHFORK WINDFARM</div>
                 </div>
             </div>
         </div>
@@ -66,7 +74,15 @@
             <div class="background item">
                 <h2 class="fw-bold">Logs</h2>
                 <div class="logs">
-                    
+                    <div>- 83f8839 (HEAD -> F-15-Homepagina, tag: v0.5.0, origin/dev, origin/F-15-Homepagina, dev) Merge pull request #32 from Lufaja/user-seeder</div>
+                    <div>- b5832ff (origin/user-seeder) added user seeder for the database with test account</div>
+                    <div>- 02aba8a Merge pull request #31 from Lufaja/Feat-4-templating</div>
+                    <div>- 01bf659 (origin/Feat-4-templating, Feat-4-templating) Logo fix</div>
+                    <div>- d9a8369 Merge pull request #29 from Lufaja/Feat-4-templating</div>
+                    <div>- bd02444 Updated navbar route names</div>
+                    <div>- 36f044f Updated navbar routes</div>
+                    <div>- df9951d Merge pull request #23 from Lufaja/Feat-4-templating</div>
+                    <div>- 6ba7621 Logo href updated</div>
                 </div>
             </div>
         </div>

@@ -8,12 +8,17 @@
 }
 
 .logo img{
-    width: auto;
-    height: 250px;
+    width: 250px;
+    height: 225px;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
 }
 
 .Text{
     padding: 10px;
+    color: #004f9f;
 }
 
 .logs{
@@ -69,4 +74,39 @@ h2{
 
 .ship-info{
     padding: 10px;
+}
+
+.info-logo{
+    position: relative;
+}
+.info-logo img{
+    position: absolute;
+    width: 8rem;
+    top: 95%;
+    left: 70%;
+}
+/* unvisited link */
+a:link {
+  color: #004f9f;
+}
+
+/* visited link */
+a:visited {
+  color: #004f9f;
+}
+
+/* mouse over link */
+a:hover {
+  color: #f36717;
+}
+
+/* selected link */
+a:active {
+  color: #f36717;
+}
+
+.logs div{
+    margin-top: 5px;
+    border-bottom: solid black 1px ;
+    font-size: 12px;
 }
