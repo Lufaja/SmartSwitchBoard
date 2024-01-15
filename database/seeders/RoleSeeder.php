@@ -17,8 +17,8 @@ class RoleSeeder extends Seeder
         $firstEngineer = Role::create(['name' => 'first engineer']);
         $secondEngineer = Role::create(['name' => 'second engineer']);
 
-        $chiefMachinist->givePermissionTo('all');
-        $firstEngineer->givePermissionTo('all');
+        $chiefMachinist->givePermissionTo('all', 'admin');
+        $firstEngineer->givePermissionTo('all', 'admin');
         $secondEngineer->givePermissionTo('view users');  
     }
 }

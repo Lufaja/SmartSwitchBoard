@@ -9,6 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Exception;
 use Twilio\Rest\Client;
+use HasRoles;
   
 class User extends Authenticatable
 {
