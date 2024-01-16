@@ -59,6 +59,7 @@
         </div>
 
         <div class="div4">
+
             <div id="div4" class="ship-info2 background item Text">
                 <h2 class="fw-bold">location info</h2>
                 <div class="">
