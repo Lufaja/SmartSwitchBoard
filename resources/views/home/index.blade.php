@@ -11,10 +11,11 @@
 
 @section('content')
 {{--    your page specific content goes here--}}
-<div class="home">
+
+<div class="home" id="home">
     <div class="parent">
         <div class="div1">
-            <div class="profile background item">
+            <div id="div1" class="profile background item">
                 <div class="ship-name">
                     <h1>Aeolus</h1>
                 </div>
@@ -24,12 +25,12 @@
             </div>
         </div>
 
-        <div class="div2">
-            <div class="background item">
+        <div class="div2" >
+            <div id="div2" class="background item Text">
                 <div>
                     <h2 class="fw-bold">Van der leun</h2>
                 </div>
-                <div class="Text">
+                <div class="    ">
                     <div>info@royalvanderleun.com</div>
                     <div>+31 (0)184 413 288</div>
                     <div><a href="vanderleun.nl" target="_blank">vanderleun.nl</a></div>
@@ -43,9 +44,9 @@
         </div>
 
         <div class="div3">
-            <div class="ship-info background item">
+            <div id="div3" class="ship-info background item Text">
                 <h2 class="fw-bold">My ship</h2>
-                <div class="Text">
+                <div class="">
                     <div>IMO: 9612636</div>
                     <div>General vessel type: Cargo</div>
                     <div>MMSI: 245179000</div>
@@ -58,9 +59,9 @@
         </div>
 
         <div class="div4">
-            <div class="ship-info2 background item">
+            <div id="div4" class="ship-info2 background item Text">
                 <h2 class="fw-bold">location info</h2>
-                <div class="Text">
+                <div class="">
                     <div>Position received: 2024-01-13 14:10 LT (UTC -5)</div>
                     <div>Area: USEC - US East Coast</div>
                     <div>Navigational Status: Moored</div>
@@ -71,7 +72,7 @@
         </div>
 
         <div class="div5">
-            <div class="background item">
+            <div id="div5" class="background item">
                 <h2 class="fw-bold">Logs</h2>
                 <div class="logs">
                     <div>- 83f8839 (HEAD -> F-15-Homepagina, tag: v0.5.0, origin/dev, origin/F-15-Homepagina, dev) Merge pull request #32 from Lufaja/user-seeder</div>
@@ -97,7 +98,3 @@
 
 </div>
 @endsection
-
-
-
-

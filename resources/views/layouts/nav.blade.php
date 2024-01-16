@@ -15,8 +15,16 @@
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="{{route('starters')}}">Main page</a>
                 </li>
+                <li class="nav-item">
+
+                </li>
             </ul>
         </div>
+    </div>
+    <div class="pe-3">
+        <input type="checkbox" id="darkmode-toggle" onchange="DarkMode()"/>
+        <label id="darkmodeToggle" for="darkmode-toggle">
+        </label>
     </div>
     <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">Menu</button>
@@ -28,3 +36,75 @@
         </div>
     </div>
 </nav>
+
+
+<style>
+    #darkmodeToggle {
+        width:53px;
+        height:25px;
+        position: relative;
+        display: block;
+        background: #ebebeb;
+        border-radius: 20px;
+        box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+        cursor: pointer;
+    }
+    #darkmodeToggle:after {
+        content: "";
+        width:18px;
+        height: 18px;
+        position: absolute;
+        top:4px;
+        left:4px;
+        background: linear-gradient(180deg,#ffcc89,#d8860b);
+        border-radius: 18px;
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    }
+    input {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+    input:checked + #darkmodeToggle {
+        background: #242424;
+    }
+    input:checked + #darkmodeToggle:after {
+        left:48px;
+        transform: translateX(-100%);
+        background: linear-gradient(180deg,#777,#3a3a3a);
+    }
+    #darkmodeToggle, #darkmodeToggle:after {
+        transition: 0.5s
+    }
+    #darkmodeToggle:active:after{ 
+        width: 20px; 
+    }
+
+    .dark-mode {
+    background: rgb(48, 56, 61);
+    /* padding: 20px */
+    /* color: white; */
+    border: solid orange 2px;
+    border-radius: 10px;
+    color: #408edd;
+}
+
+.dark-mode2{
+  background: rgb(48, 56, 61);
+  border-radius: 10px;
+  /* color: #408edd; */
+}
+
+.dark-mode3{
+  color: #408edd;
+  background: rgb(48, 56, 61);
+  border-radius: 10px;
+}
+
+.dark-mode4{
+  color: #408edd;
+  background: rgb(48, 56, 61);
+  border-radius: 10px;
+  padding: 20px;
+}
+</style>
