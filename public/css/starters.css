@@ -23,3 +23,14 @@
         .grid-button:hover {
             background-color: #2980b9;
         }
+        .center{
+            text-align: center;
+            color:#2056ae ;
+            font-weight: bold;
+        }
+        .center label{
+            border: solid #f36717 3px;
+            border-radius: 8px;
+            padding: 4px;
+            margin-top: 5px;
+        }

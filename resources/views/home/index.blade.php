@@ -59,7 +59,7 @@
 
         <div class="div4">
             <div class="ship-info2 background item">
-                <h2 class="fw-bold">location info</h2>
+                <h2 class="fw-bold">Location info</h2>
                 <div class="Text">
                     <div>Position received: 2024-01-13 14:10 LT (UTC -5)</div>
                     <div>Area: USEC - US East Coast</div>
