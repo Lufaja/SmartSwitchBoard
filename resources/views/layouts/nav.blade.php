@@ -23,7 +23,7 @@
     </div>
     <div class="pe-3">
         <input type="checkbox" id="darkmode-toggle" onchange="DarkMode()"/>
-        <label for="darkmode-toggle">
+        <label id="darkmodeToggle" for="darkmode-toggle">
         </label>
     </div>
     <div class="dropdown">
@@ -39,7 +39,7 @@
 
 
 <style>
-    label {
+    #darkmodeToggle {
         width:53px;
         height:25px;
         position: relative;
@@ -49,7 +49,7 @@
         box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
         cursor: pointer;
     }
-    label:after {
+    #darkmodeToggle:after {
         content: "";
         width:18px;
         height: 18px;
@@ -65,18 +65,18 @@
         height: 0;
         visibility: hidden;
     }
-    input:checked + label {
+    input:checked + #darkmodeToggle {
         background: #242424;
     }
-    input:checked + label:after {
+    input:checked + #darkmodeToggle:after {
         left:48px;
         transform: translateX(-100%);
         background: linear-gradient(180deg,#777,#3a3a3a);
     }
-    label, label:after {
+    #darkmodeToggle, #darkmodeToggle:after {
         transition: 0.5s
     }
-    label:active:after{ 
+    #darkmodeToggle:active:after{ 
         width: 20px; 
     }
 
