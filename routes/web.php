@@ -39,6 +39,15 @@ Route::get('/starters', [StartersController::class, 'index'])->name('starters');
 // Engine route 
 Route::get('/engines', [EnginesController::class, 'index'])->name('engines');
 
+Route::get('/lube-oil', [EnginesController::class, 'lubeOil'])->name('lube-oil');
+Route::get('/workshop', [EnginesController::class, 'workshop'])->name('workshop');
+Route::get('/cw', [EnginesController::class, 'cw'])->name('cw');
+Route::get('/hydrolicOil', [EnginesController::class, 'hydrolicOil'])->name('hydrolicOil');
+Route::get('/fuelOil', [EnginesController::class, 'fuelOil'])->name('fuelOil');
+Route::get('/accelerieSystems', [EnginesController::class, 'accelerieSystems'])->name('accelerieSystems');
+Route::get('/fans', [EnginesController::class, 'fans'])->name('fans');
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

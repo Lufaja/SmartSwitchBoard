@@ -52,6 +52,7 @@ function DarkMode() {
         $(".logs").css("background-color", "rgb(48, 56, 61)");
         $(".grid-button").css("background-color", "rgb(48, 56, 61)");
         $(".grid-button").css("color", "#408edd");
+        $(".starters").css("border", "solid orange 2px");
         localStorage.setItem("darkmode", "enabled");
 
     }else{
@@ -73,6 +74,7 @@ function DarkMode() {
         $(".logs").css("background-color", "white");
         $(".grid-button").css("background-color", "white");
         $(".grid-button").css("color", "black");
+        $(".starters").css("border", "solid #004f9f 2px");
         localStorage.setItem("darkmode", "disabeld");
 
 
