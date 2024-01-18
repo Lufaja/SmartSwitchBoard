@@ -17,6 +17,41 @@ class EnginesController extends Controller
     {
         return view("engines");
     }
+    public function lubeOil()
+    {
+        return view("engines/lubeOil");
+    }
+
+    public function workshop()
+    {
+        return view("engines/workshop");
+    }
+    
+    public function cw()
+    {
+        return view("engines/cw");
+    }
+
+    public function hydrolicOil()
+    {
+        return view("engines/hydrolicOil");
+    }
+
+    public function fuelOil()
+    {
+        return view("engines/fuelOil");
+    }
+
+    public function accelerieSystem()
+    {
+        return view("engines/accelerieSystem");
+    }
+
+    public function fans()
+    {
+        return view("engines/fans");
+    }
+
 
     public function create()
     {

@@ -13,44 +13,26 @@
 
 @section('content')
 {{-- 1 --}}
-  <div class="center">
-    <label for="lube">Lube oil</label>
   </div>
       <div class="button-grid">
-          <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">LUB.OIL TRANSFER PUMP GENERATOR ENG</button>
-          <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">LUB. OIL TRANSFER PUMP DREDGE ENGINE</button>
-          <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">EMERGENCY HOISTING LADDER WINCH</button>
+          <button class="grid-button starters" onclick="window.location.href = '{{ route('lube-oil') }}'">Lube oil</button>
+          <button class="grid-button starters" onclick="window.location.href = '{{ route('workshop') }}'">Workshop</button>
+          <button class="grid-button starters" onclick="window.location.href = '{{ route('cw') }}'">Cool water</button>
+          <button class="grid-button starters" onclick="window.location.href = '{{ route('hydrolicOil') }}'">Hydrolic oil</button>
+          <button class="grid-button starters" onclick="window.location.href = '{{ route('fuelOil') }}'">Fuel oil</button>
+          <button class="grid-button starters" onclick="window.location.href = '{{ route('accelerieSystems') }}'">Accelerie systems</button>
+          <button class="grid-button starters" onclick="window.location.href = '{{ route('fans') }}'">Fans</button>
       </div>
       {{-- 2 --}}
-<div class="center"><label for="workshop">Workshop</label></div>
-            <div class="button-grid">
-            <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">HOISTING CRANE ENGINE ROOM</button>
-            <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">DECK CRANE LADDER GANTRY</button>
-            <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">DECK CRANE MID SHIP</button>
-            <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">DECK CRANE AFT SHIP</button>
-            <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">DAVIT FOR M.O.B. BOAT</button>
-            <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">DRILLING MACHINE</button>
-            <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">GRINDING MACHINE</button>
-            <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">WELDING RECTIFIER A</button>
-            <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">WELDING RECTIFIER B</button>
-        </div>
-    </div>
-  </div>
-  {{-- 3 --}}
-<div class="center"><label for="cool-water">Cool water</label></div>
-        <div class="button-grid">
-            <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">FRESH WATER HYDROPHORE UNIT</button>
-            <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">RAW COOL WATER PUMP LT AUX. SYSTEM</button>
-            <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">FRESH AUX COOL WATER PUMP</button>
-            <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">CIRC. PUMP INT. COOL WATER CUTTER DRIVE</button>
-            <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">HYDRAULIC FILTER/COOLING PUMP</button>
-            <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">ST-BY FRESH AUX. COOL WATER PUMP</button>
-            <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">CIRC. PUMP INT. COOL WATER</button>
-        </div>
-    </div>
-  </div>
+
   {{-- 4 --}}
-<div class="center"><label for="hydrolic-oil">Hydrolic oil</label></div>
+{{-- <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#hydrolic-oil" role="button" aria-expanded="false" aria-controls="hydrolic-oil">
+      Hydrolic oil
+    </a>
+  </p>
+  <div class="collapse" id="hydrolic-oil">
+    <div class="card card-body">
         <div class="button-grid">
             <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">HYDRAULIC PUMP 1 SLIDE VALVES</button>
             <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">HYDRAULIC PUMP 2 SLIDE VALVES</button>
@@ -59,10 +41,16 @@
             <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">HYDRAULIC OIL TRANSFER PUMP</button>
         </div>
     </div>
-  </div>
+  </div> --}}
   {{-- 5 --}}
-<div class="center"><label for="fuel-oil">Fuel oil</label></div>
-  <div class="button-grid">
+{{-- <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#fuel-oil" role="button" aria-expanded="false" aria-controls="fuel-oil">
+      Fuel oil
+    </a>
+  </p>
+  <div class="collapse" id="fuel-oil">
+    <div class="card card-body">
+        <div class="button-grid">
             <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">FUEL OIL COALISTER FILTER</button>
             <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">FUEL OIL SEPARATOR 1</button>
             <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">FUEL OIL SEPARATOR 2</button>
@@ -71,27 +59,39 @@
     
         </div>
     </div>
-  </div>
+  </div> --}}
   {{-- 6 --}}
-<div class="center"><label for="accelerie-systems">Accelerie systems</label></div>
-  <div class="button-grid">
+{{-- <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#accelerie-systems" role="button" aria-expanded="false" aria-controls="accelerie-systems">
+      Accelerie systems
+    </a>
+  </p>
+  <div class="collapse" id="accelerie-systems">
+    <div class="card card-body">
+        <div class="button-grid">
             <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">LIGHTING TRANSFORMER 1</button>
             <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">BILGE OIL WATER SEPARATOR</button>
             <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">ST-BY RAW C.W PUMP LT AUX SYS</button>
             <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">DREDGE PUMP DRIVE</button>
         </div>
     </div>
-  </div>
+  </div> --}}
   {{-- 7 --}}
-<div class="center"><label for="vents">Vents</label></div>
-  <div class="button-grid">
+{{-- <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#vents" role="button" aria-expanded="false" aria-controls="vents">
+      Vents
+    </a>
+  </p>
+  <div class="collapse" id="vents">
+    <div class="card card-body">
+        <div class="button-grid">
             <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">WORKING AIR COMPRESSOR</button>
             <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">WASTE OIL TRANSFER PUMP</button>
             <button class="grid-button" onclick="window.location.href = '{{ route('engines') }}'">FAN BRAKE RESISTOR</button>
 
         </div>
     </div>
-  </div>
+  </div> --}}
 
 
   
