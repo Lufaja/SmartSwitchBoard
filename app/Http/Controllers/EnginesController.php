@@ -42,9 +42,9 @@ class EnginesController extends Controller
         return view("engines/fuelOil");
     }
 
-    public function accelerieSystem()
+    public function accelerieSystems()
     {
-        return view("engines/accelerieSystem");
+        return view("engines/accelerieSystems");
     }
 
     public function fans()
