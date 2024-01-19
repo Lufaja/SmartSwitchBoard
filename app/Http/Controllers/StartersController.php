@@ -3,28 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class HomeController extends Controller
+class StartersController extends Controller
 {
-    /*
-     * Show the application dashboard.
-     *
+    /**
+     * show the application dashboard.
      * @return \Illuminate\Contracts\Support\Renderable
-     *
-     * Display a listing of the resource.
+     * 
      */
 
     public function index()
     {
-        return view('home.index');
+        return view("starters");
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
-        //
     }
 
     /**

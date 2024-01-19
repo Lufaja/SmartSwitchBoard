@@ -1,0 +1,36 @@
+        /* CSS for button grid */
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+            gap: 10px; /* Adjust the gap between buttons */
+            justify-content: center; /* Centers the grid horizontally */
+        }
+
+        /* Style for buttons */
+        .grid-button {
+            padding: 10px 20px;
+            text-align: center;
+            background-color: white;
+            font-weight:bold;
+            color: #000000;
+            border: 3px solid #2056ae;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for buttons */
+        .grid-button:hover {
+            background-color: #2980b9;
+        }
+        .center{
+            text-align: center;
+            color:#2056ae ;
+            font-weight: bold;
+        }
+        .center label{
+            border: solid #f36717 3px;
+            border-radius: 8px;
+            padding: 4px;
+            margin-top: 5px;
+        }

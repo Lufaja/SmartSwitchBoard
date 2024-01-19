@@ -1,0 +1,29 @@
+.item-main{
+    margin: auto;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    z-index: 1;
+    position: relative;
+}
+.wrapper{
+    margin: auto;
+    width: 98%;
+    height: auto;
+    background: linear-gradient(70deg, rgb(243, 103, 23), rgb(32, 86, 174));
+    padding: 4px;
+    margin-top: 10px;
+}
+
+.item{
+    padding: 10px 0px 0px 10px;
+}
+
+.arrow{
+    position: absolute;
+    right: 1%;
+    top: 3%;
+}
+

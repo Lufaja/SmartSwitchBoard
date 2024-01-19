@@ -3,28 +3,58 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class HomeController extends Controller
+class EnginesController extends Controller
 {
-    /*
-     * Show the application dashboard.
-     *
+    /**
+     * show the application dashboard.
      * @return \Illuminate\Contracts\Support\Renderable
-     *
-     * Display a listing of the resource.
+     * 
      */
 
     public function index()
     {
-        return view('home.index');
+        return view("engines");
+    }
+    public function lubeOil()
+    {
+        return view("engines/lubeOil");
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
+    public function workshop()
+    {
+        return view("engines/workshop");
+    }
+    
+    public function cw()
+    {
+        return view("engines/cw");
+    }
+
+    public function hydrolicOil()
+    {
+        return view("engines/hydrolicOil");
+    }
+
+    public function fuelOil()
+    {
+        return view("engines/fuelOil");
+    }
+
+    public function accelerieSystems()
+    {
+        return view("engines/accelerieSystems");
+    }
+
+    public function fans()
+    {
+        return view("engines/fans");
+    }
+
+
     public function create()
     {
-        //
     }
 
     /**
